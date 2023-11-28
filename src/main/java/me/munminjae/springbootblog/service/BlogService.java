@@ -7,6 +7,7 @@ import me.munminjae.springbootblog.domain.Article;
 import me.munminjae.springbootblog.dto.AddArticleRequest;
 import me.munminjae.springbootblog.dto.UpdateArticleRequest;
 import me.munminjae.springbootblog.repository.BlogRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

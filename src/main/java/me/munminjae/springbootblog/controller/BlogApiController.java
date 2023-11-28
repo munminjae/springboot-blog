@@ -7,6 +7,7 @@ import me.munminjae.springbootblog.dto.ArticleResponse;
 import me.munminjae.springbootblog.dto.UpdateArticleRequest;
 import me.munminjae.springbootblog.service.BlogService;
 import org.apache.coyote.Response;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RestController
 public class BlogApiController {
+
     private final BlogService blogService;
 
     // HTTP 메서드가 POST일 때 전달받은 URL과 동일하면 메서드로 매핑
