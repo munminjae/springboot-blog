@@ -1,4 +1,4 @@
-package me.munminjae.springbootblog.controller;
+package me.munminjae.springbootblog.controller.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.munminjae.springbootblog.domain.Article;
