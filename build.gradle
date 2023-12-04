@@ -41,3 +41,8 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+//빌드 시 일반 jar 파일만 생성되도록
+jar {
+    enabled = false
+}

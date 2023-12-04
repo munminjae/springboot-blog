@@ -8,10 +8,10 @@ spring:
 
     # 테이블 생성 후에 data.sql 실행
     defer-datasource-initialization:  true
-
-  datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
+# AWS 배포시 MySQL을 사용하기 때문에 주석 처리
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#    username: sa
   h2:
     console:
       enabled: true
@@ -21,14 +21,9 @@ spring:
       client:
         registration:
           google:
-            client-id: 123...
-            client-secret: 123...
 
 
             scope:
               - email
               - profile
 
-jwt:
-  issuer: ajufresh@gmail.com
-  secret_key: study-springboot
