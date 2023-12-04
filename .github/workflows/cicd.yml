@@ -38,6 +38,7 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          # 수정
           application_name: springboot-developer
           environment_name: Springboot-developer-env
           version_label: github-action-${{steps.current-time.outputs.formattedTime}}
