@@ -22,7 +22,6 @@ spring:
         registration:
           google:
 
-
             scope:
               - email
               - profile
