@@ -44,5 +44,5 @@ jobs:
           application_name: springboot-developer
           environment_name: Springboot-developer-env
           version_label: github-action-${{steps.current-time.outputs.formattedTime}}
-          region: us-east-2 # 지역
+          region: us-east-2 # 지역 코드
           deployment_package: ./build/libs/${{env.artifact}}
