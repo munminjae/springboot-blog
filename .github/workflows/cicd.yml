@@ -37,7 +37,7 @@ jobs:
       - name: Set artifact
         run: echo "artifact=$(ls ./build/libs)" >> $GITHUB_ENV
 
-      # 빈스토크 배포
+      # 빈스토크 배포 2
       - name: Beanstalk Deploy
         uses: einaregilsson/beanstalk/deploy@v20
         with:
