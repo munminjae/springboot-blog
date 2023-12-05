@@ -1,8 +1,7 @@
 package me.munminjae.springbootblog.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.*;
+import lombok.*;
 import me.munminjae.springbootblog.domain.Article;
 
 @NoArgsConstructor  //기본 생성자 추가
@@ -10,7 +9,11 @@ import me.munminjae.springbootblog.domain.Article;
 @Getter
 public class AddArticleRequest {
 
+    @NotNull
+    @Size(min = 1, max = 10)
     private String title;
+
+    @NotNull
     private String content;
 
     public Article toEntity(String author) { // 생성자를 사용하여 객체 생성
